@@ -19,16 +19,26 @@ To create a Python program that prompts the user for a list of grades separated 
 7. Terminate the program.
 
 ---
+## Reg.No-212223060147
 
+## Name- MANICKAM SUBBU
 ### PROGRAM
 
-```
-Reg.No
-Name
-Add Your Code Here
+```python
+
+grades_input = input()
+grades_list = grades_input.split(',')
+try:
+    grades = [int(grade.strip()) for grade in grades_list]
+    print(grades)
+except ValueError:
+    print("Please enter only valid integers separated by commas.")
+
 
 ```
 
 ### OUTPUT
+![image](https://github.com/user-attachments/assets/4534c0cc-6d9d-4b0d-8bce-ed27c956d5c4)
 
 ### RESULT
+Thus the program prompts the user for a comma-separated list of grades, splits them, and handles exceptions if they can't be converted to integers has been implemented and executed successfully.
